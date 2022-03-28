@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Illusion" />
+    <meta
+      name="keywords"
+      content="news, dev, bitcoin, crypto, cryptocoin, developer, programmer, usa"
+    />
+    <meta name="description" content="Restoran BAUME" />
+    <!-- description gives the info to search engines about the content of the Web Site -->
+    <meta http-equiv="refresh" content="911" />
+    <meta name="application-name" content="illusion" />
+    <meta name="generator" content="error |911" />
+
+    <!-- Title -->
+    <title>B A U M E</title>
+
+    <!-- Text Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons 6.0.0 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap 5.1.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons 1.8.1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Tab Icon -->
+    <link rel="icon" type="image/x-icon" href="icons/Angular_icon.ico" />
+
+    <!-- Light Slider Jquery -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"
+    />
+
+    <!-- External  stylesheet -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- Internal scripts -->
+    <!-- <script>
+      alert(`I'm an internal script which loads first!`);
+    </script> -->
+    <!-- If we add internal scripts it loaded before the page loads. So we ain't need that-->
+    <!-- Also we should not add external script here for the same reason -->
+
+    <!-- Font Awesome 6.1.1 -->
+    <script
+      src="https://kit.fontawesome.com/6af30aea98.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top myNav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><h1 class="myColoredText"><strong>Baume.</strong></h1></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item d-md-none">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a href="#" class="nav-link">FOOD</a>
+            </li>
+            <li class="nav-item dropdown d-md-none">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                GALLERY
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">GALLERY 0</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">GALLERY 1</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">ANOTHER GALLERIES</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="nav-link disabled">Soon...</a>
+            </li>
+          </ul>
+
+          <button
+            class="btn btn-outline-dark ms-1 ms-1 me-1 rounded-pill"
+            type="button"
+            id="button-addon2"
+          >
+            RESERVATION
+          </button>
+
+          <!-- Social Icons -->
+          <ul class="d-flex gap-2 pt-3">
+            <li
+              class="nav-item d-none d-lg-block me-1"
+              style="list-style-type: none"
+            >
+              <i class="bi bi-facebook fs-3 text-success socialIcons"></i>
+            </li>
+            <li
+              class="nav-item d-none d-lg-block me-1"
+              style="list-style-type: none"
+            >
+              <i class="bi bi-twitter fs-3 text-success socialIcons"></i>
+            </li>
+            <li
+              class="nav-item d-none d-lg-block me-3"
+              style="list-style-type: none"
+            >
+              <i class="bi bi-instagram fs-3 text-success socialIcons"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Cover Section -->
+    <section id="coverSection">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="blueColoredCoverHeading ms-3">
+              <strong>The Delicious Food House</strong>
+            </h1>
+            <p class="text-muted ms-3">
+              Baume is a restaurant, bar and coffee roastery located on London.
+              We have awesome recipes and the most talented chefs in town.
+            </p>
+            <button class="btn btn-success btn-lg rounded-pill m-3 coverButton">
+              Discover Menu
+            </button>
+            <button
+              class="btn btn-outline-danger btn-lg rounded-pill m-3 coverButton"
+            >
+              Contact
+            </button>
+          </div>
+          <div class="col-lg-6">
+            <picture>
+              <source srcset="pics\banner-thumb.webp" type="image/webp" />
+              <img
+                src="pics\banner-thumb.png"
+                alt="coverPic"
+                class="coverPicture ms-5 d-none d-md-block"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story Telling Section -->
+    <section id="storyTelling">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 pb-5">
+            <h1 class="storyTellingHeading">
+              <strong>Story Telling</strong>
+            </h1>
+            <p class="text-success textStoryTelling">
+              QUALITY FOOD DELICATESSENS & MAGIC PLACE
+            </p>
+            <div class="storyTellingLine mb-3"></div>
+            <article>
+              <p>
+                Baume is about the combined efforts of chefs, cooks, servers,
+                farmers, vineyards, and brewers and I see that partnership
+                extending to our guests by providing the highest quality food
+              </p>
+              <br />
+              <p>
+                Numerous commentators have also referred to the supposed
+                restaurant owner's eccentric habit of touting for custom outside
+                his establishment, dressed in aristocratic fashion and
+                brandishing a swordoperators, One Tour.
+              </p>
+              <a href="#">READ MORE</a>
+              <div class="storyTellingLine"></div>
+            </article>
+          </div>
+          <div class="col-lg-6" id="picture">
+            <picture>
+              <source srcset="pics\cooker.webp" type="image/webp" />
+              <img src="pics\cooker.jpg" alt="Cooker" class="cookerGirl" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discover Section -->
+    <section id="discover mb-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 mb-5">
+            <p class="text-danger text-center textDiscover">DISCOVER MENU</p>
+            <h1 class="text-center discoverHeading">Our Food Delicatessens</h1>
+          </div>
+
+          <div class="row" id="cardOrders">
+            <div class="col-lg-4 col-md-4 text-center">
+              <div class="card text-light bg-success" style="width: 18rem">
+                <picture>
+                  <source src="pics\left.webp" type="image/webp" />
+                  <img src="pics\left.jpg" alt="Burger" class="card-img-top" />
+                </picture>
+                <div class="card-body">
+                  <h3 class="card-title"><strong>$18</strong></h3>
+                  <h5 class="card-title">
+                    <strong>Super BBQ Cool Burger</strong>
+                  </h5>
+                  <p class="card-text cardText">
+                    Fried eggs, fried bacon, fresh tomato salad, and grilled
+                    meal
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center">
+              <div class="card text-light bg-danger" style="width: 18rem">
+                <picture>
+                  <source src="pics\center.webp" type="image/webp" />
+                  <img
+                    src="pics\center.jpg"
+                    alt="Burger"
+                    class="card-img-top"
+                  />
+                </picture>
+                <div class="card-body">
+                  <h3 class="card-title"><strong>$12</strong></h3>
+                  <h5 class="card-title">
+                    <strong>Supreme Pizza Menu</strong>
+                  </h5>
+                  <p class="card-text cardText">
+                    Oninin rings, portobello mushrooms, fresh mozzarella, coffe
+                    or tea
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center">
+              <div class="card text-light bg-secondary" style="width: 18rem">
+                <picture>
+                  <source src="pics\right.webp" type="image/webp" />
+                  <img src="pics\right.jpg" alt="Burger" class="card-img-top" />
+                </picture>
+                <div class="card-body">
+                  <h3 class="card-title"><strong>$20</strong></h3>
+                  <h5 class="card-title">
+                    <strong>Vegan Taco</strong>
+                  </h5>
+                  <p class="card-text cardText">
+                    Crispy avocado, roasted red potatos with rosemary, mashrooms
+                    sause, vine
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center">
+              <div class="card text-light bg-primary" style="width: 18rem">
+                <picture>
+                  <source src="pics\left.webp" type="image/webp" />
+                  <img src="pics\left.jpg" alt="Burger" class="card-img-top" />
+                </picture>
+                <div class="card-body">
+                  <h3 class="card-title"><strong>$18</strong></h3>
+                  <h5 class="card-title">
+                    <strong>Super BBQ Cool Burger</strong>
+                  </h5>
+                  <p class="card-text cardText">
+                    Fried eggs, fried bacon, fresh tomato salad, and grilled
+                    meal
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center">
+              <div class="card text-light bg-info" style="width: 18rem">
+                <picture>
+                  <source src="pics\center.webp" type="image/webp" />
+                  <img
+                    src="pics\center.jpg"
+                    alt="Burger"
+                    class="card-img-top"
+                  />
+                </picture>
+                <div class="card-body">
+                  <h3 class="card-title"><strong>$12</strong></h3>
+                  <h5 class="card-title">
+                    <strong>Supreme Pizza Menu</strong>
+                  </h5>
+                  <p class="card-text cardText">
+                    Oninin rings, portobello mushrooms, fresh mozzarella, coffe
+                    or tea
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center">
+              <div class="card text-light bg-dark" style="width: 18rem">
+                <picture>
+                  <source src="pics\right.webp" type="image/webp" />
+                  <img src="pics\right.jpg" alt="Burger" class="card-img-top" />
+                </picture>
+                <div class="card-body">
+                  <h3 class="card-title"><strong>$20</strong></h3>
+                  <h5 class="card-title">
+                    <strong>Vegan Taco</strong>
+                  </h5>
+                  <p class="card-text cardText">
+                    Crispy avocado, roasted red potatos with rosemary, mashrooms
+                    sause, vine
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile App Section -->
+    <section id="mobileApp mt-5 pt-5 pb-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-8 col-md-8 pe-5">
+            <h5 class="headingMobileApp0">MOBILE APP</h5>
+            <div class="lineMobileApp mt-2"></div>
+            <h1 class="headingMobileApp1">
+              <strong>Download App for Order Food Online</strong>
+            </h1>
+            <p class="paragraphMobileApp0">
+              DELIVERY & TAKEOUT FROM THE BEST LOCAL RESTAURANTS. BREAKFAST,
+              LUNCH, DINNER AND MORE.
+            </p>
+            <p class="paragraphMobileApp1">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate .
+            </p>
+
+            <!-- Buttons -->
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <button
+                  class="btn btn-outline-danger btn-lg rounded-pill m-3 coverButton d-flex"
+                >
+                  <i class="fa-brands fa-google-play ico me-2"></i>
+                  <div class="d-grid">
+                    <div class="smallCaps">Get It On</div>
+                    <div>Google Play</div>
+                  </div>
+                </button>
+              </div>
+              <div class="col-sm-12 col-md-8 col-lg-8">
+                <button
+                  class="btn btn-success btn-lg rounded-pill m-3 coverButton d-flex"
+                >
+                  <i class="fa-brands fa-apple ico me-2"></i>
+                  <div class="d-grid">
+                    <div class="smallCaps">Get It On</div>
+                    <div>Apple Store</div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <picture>
+              <source src="pics/iphone.webp" type="image/webp" />
+              <img src="pics/iphone.png" alt="Iphone" class="picMobileApp" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Our Gallery Section -->
+    <section id="explore">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 col-md-12">
+            <p class="text-center textExplore">DISCOVER MENU</p>
+            <h1 class="headingExplore text-center">Explore Our Gallery</h1>
+            <div class="ulExplore text-center">
+              <ul>
+                <li><a href="#" class="linkExplore"> All Gallery</a></li>
+                <li><a href="#" class="linkExplore">Fine Dining</a></li>
+                <li><a href="#" class="linkExplore">Coffee Shop</a></li>
+                <li><a href="#" class="linkExplore">Drink & Bar</a></li>
+                <li><a href="#" class="linkExplore">Catering Service</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 mb-3">
+          <div class="col-lg-3 col-md-3">
+            <picture>
+              <source src="pics\item1.webp" type="image/webp" />
+              <img src="pics\item1.jpg" alt="Item1" class="picsExplore" />
+            </picture>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <picture>
+              <source src="pics\item2.webp" type="image/webp" />
+              <img src="pics\item2.jpg" alt="Item2" class="picsExplore" />
+            </picture>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <picture>
+              <source src="pics\item3.webp" type="image/webp" />
+              <img src="pics\item3.jpg" alt="Item3" class="picsExplore" />
+            </picture>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <picture>
+              <source src="pics\item4.webp" type="image/webp" />
+              <img src="pics\item4.jpg" alt="Item4" class="picsExplore" />
+            </picture>
+          </div>
+        </div>
+        <div class="row mt-3 mb-3">
+          <div class="col-lg-3 col-md-3">
+            <picture>
+              <source src="pics\item5.webp" type="image/webp" />
+              <img src="pics\item5.jpg" alt="Item5" class="picsExplore" />
+            </picture>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <picture>
+              <source src="pics\item6.webp" type="image/webp" />
+              <img src="pics\item6.jpg" alt="Item6" class="picsExplore" />
+            </picture>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <picture>
+              <source src="pics\item7.webp" type="image/webp" />
+              <img src="pics\item7.jpg" alt="Item7" class="picsExplore" />
+            </picture>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <picture>
+              <source src="pics\item8.webp" type="image/webp" />
+              <img src="pics\item8.jpg" alt="Item8" class="picsExplore" />
+            </picture>
+          </div>
+        </div>
+        <div class="row mt-3 mb-3">
+          <div class="col-lg-12 col-md-12">
+            <button class="buttonExplore rounded-pill text-center">
+              Reservation
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Section -->
+    <section id="review">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-10">
+            <h1 class="headingReview">Happy Customers</h1>
+            <p class="textReview">We Get People Talking</p>
+          </div>
+          <div class="col-lg-2">
+            <picture>
+              <source src="pics\logo1.webp" type="image/webp" />
+              <img src="pics\logo1.webp" alt="Logo" class="logoReview" />
+            </picture>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div
+            class="col-lg-10 bg-light text-center text-muted pb-5 carouselReview"
+          >
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h3 class="headingCarouselReview">
+                    Exquisite food and very good deals
+                  </h3>
+                  <p class="textCarouselReview">
+                    Awonderful dining experience at West. My wife and I have
+                    often had wonderful meals. We have shared either meals or
+                    conversations about our meals at your restaurant with
+                    friends and family!
+                  </p>
+                  <h4 class="h4CarouselReview">FRANCI GOLDEN</h4>
+                  <p>Los Angeles, California, The USA</p>
+                </div>
+                <div class="carousel-item">
+                  <h3 class="headingCarouselReview">
+                    Exquisite food and very good deals
+                  </h3>
+                  <p class="textCarouselReview">
+                    Awonderful dining experience at West. My wife and I have
+                    often had wonderful meals. We have shared either meals or
+                    conversations about our meals at your restaurant with
+                    friends and family!
+                  </p>
+                  <h4 class="h4CarouselReview">FRANCI GOLDEN</h4>
+                  <p>Los Angeles, California, The USA</p>
+                </div>
+                <div class="carousel-item">
+                  <h3 class="headingCarouselReview">
+                    Exquisite food and very good deals
+                  </h3>
+                  <p class="textCarouselReview">
+                    Awonderful dining experience at West. My wife and I have
+                    often had wonderful meals. We have shared either meals or
+                    conversations about our meals at your restaurant with
+                    friends and family!
+                  </p>
+                  <h4 class="h4CarouselReview">FRANCI GOLDEN</h4>
+                  <p>Los Angeles, California, The USA</p>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-12">
+            <p class="textReservation">BOOK A TABLE</p>
+            <h1 class="headingReservation">Make A Reservation</h1>
+            <p class="text-muted">
+              You can book a table online easily in just a minute. Reservations
+              are <br />
+              for lunch and dinner, check the availability of your table & book
+              it now!
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+          <div class="col-lg-2 mt-2">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>1 PERSON</option>
+              <option value="1">2 PEOPLE</option>
+              <option value="2">3 PEOPLE</option>
+              <option value="3">4 PEOPLE</option>
+            </select>
+          </div>
+          <div class="col-lg-2 mt-2">
+            <select class="form-select" aria-label="Default select example">
+              <option>1:00 PM</option>
+              <option>2:00 PM</option>
+              <option>3:00 PM</option>
+              <option>4:00 PM</option>
+              <option>5:00 PM</option>
+              <option>6:00 PM</option>
+              <option>7:00 PM</option>
+              <option>8:00 PM</option>
+              <option>9:00 PM</option>
+              <option>10:00 PM</option>
+              <option>11:00 PM</option>
+              <option>12:00 PM</option>
+              <option>1:00 AM</option>
+              <option>2:00 AM</option>
+              <option>3:00 AM</option>
+              <option>4:00 AM</option>
+              <option>5:00 AM</option>
+              <option>6:00 AM</option>
+              <option>7:00 AM</option>
+              <option>8:00 AM</option>
+              <option>9:00 AM</option>
+              <option>10:00 AM</option>
+              <option>11:00 AM</option>
+              <option>12:00 AM</option>
+            </select>
+          </div>
+          <div class="col-lg-2 mt-2 text-center">
+            <input type="date" name="" id="" />
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-6 d-grid gap-2">
+            <input
+              type="button"
+              class="btn btn-outline-danger"
+              value="FIND A TABLE"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="aboutUs">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 text-center">
+            <h4 class="leftAboutUs">Our Address</h4>
+            <p>Lefreak Building, 2 AlBahr St, Down Santa Monica, Los Angeles</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <h4 class="leftAboutUs">Opening Hours</h4>
+            <p>Mon - Fri: 10 AM - 11 PM</p>
+            <p>Sat - Sun: 9 AM - 1 PM</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <h4 class="leftAboutUs">Private Dinning</h4>
+            <p>
+              Email:
+              <a href="mailto:mr.developerfred@gmail.com"
+                ><i class="bi bi-phone-vibrate fs-4 text-danger"></i
+              ></a>
+            </p>
+            <p>
+              Phone:
+              <a href="tel:+994775000530"
+                ><i class="bi bi-envelope-exclamation-fill fs-4 text-danger"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Section -->
+    <section id="bottom">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center pt-3">
+            <p>
+              Designed By
+              <strong class="coloredText"
+                >I L L U S I
+                <i class="bi bi-eye" title="GOD's eye"></i> N</strong
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <i class="bi bi-instagram fs-4 m-1"></i>
+            <i class="bi bi-github fs-4 m-1"></i>
+            <i class="bi bi-twitter fs-4 m-1"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Light Slider Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Font Awesome 6.0.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+    <!-- Bootstrap 5.1.3 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- External Script -->
+    <script src="scripts/script.js"></script>
+
+    <!-- lightSlider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+  </body>
+</html>

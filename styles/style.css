@@ -1,0 +1,382 @@
+@font-face {
+  font-family: 'Google Sans Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/googlesanstext/v16/5aUu9-KzpRiLCAt4Unrc-xIKmCU5qE52i1dC.woff2)
+    format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: 'Google Sans Text';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/googlesanstext/v16/5aUu9-KzpRiLCAt4Unrc-xIKmCU5qE52i1dC.woff2)
+    format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url(fonts/Gilroy-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Open Sans', 'Google Sans Text', 'Gilroy-Regular', Arial,
+    Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  vertical-align: baseline;
+  letter-spacing: 0.0063rem;
+  word-spacing: 0rem;
+  text-indent: 0rem;
+}
+
+/***** Nav Bar *****/
+
+.myNav {
+  color: #212529;
+  background-color: #f6f5f5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.myColoredText {
+  background: linear-gradient(to right, #ffcca2, #b388e2);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: 'Google Sans Text', 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.socialIcons {
+  cursor: pointer;
+}
+
+/***** Section Cover *****/
+
+#coverSection {
+  background-color: #f6f5f5;
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+}
+
+.blueColoredCoverHeading {
+  color: #02027e;
+  padding-top: 6rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+}
+
+.coverPicture {
+  width: 30rem;
+  padding-top: 4rem;
+}
+
+.coverButton {
+  padding: 1rem 2rem;
+}
+
+/***** Story Telling Section *****/
+
+#storyTelling {
+  color: #212529;
+  background-color: rgba(248, 138, 138, 0.4);
+}
+
+.storyTellingHeading {
+  padding-left: 2.5rem;
+  padding-top: 5rem;
+  font-size: 4rem !important;
+  color: #02027e;
+}
+
+.storyTellingLine {
+  width: 13%;
+  height: 0.125rem;
+  background-color: #ff0000;
+  margin: auto 2.5rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.textStoryTelling {
+  padding-left: 2.5rem;
+}
+
+article > p {
+  margin: auto 2.5rem;
+}
+
+article > a {
+  color: #ff0000;
+  margin: auto 2.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.cookerGirl {
+  width: 100%;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+#picture {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+/***** Discover Section *****/
+
+#discover {
+  margin-top: 5rem;
+}
+
+.textDiscover {
+  letter-spacing: 0.3125rem;
+  font-size: 0.875rem;
+  margin: 1rem;
+}
+
+.discoverHeading {
+  color: #02027e;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.cardText {
+  font-size: small;
+}
+
+/***** Mobile App Section *****/
+
+#mobileApp {
+  color: #212529;
+  background-color: rgba(248, 138, 138, 0.4);
+}
+
+.headingMobileApp0 {
+  padding-left: 2.5rem;
+  padding-top: 5rem;
+  letter-spacing: 0.3125rem;
+}
+
+.lineMobileApp {
+  width: 25%;
+  height: 0.0625rem;
+  background-color: #ff0000;
+  margin: auto 2.5rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.headingMobileApp1 {
+  padding-left: 2.5rem;
+  padding-top: 5rem;
+  font-size: 3.5rem !important;
+  color: #02027e;
+}
+
+.paragraphMobileApp0 {
+  padding-left: 2.5rem;
+  color: #ff0000;
+  margin: 4rem auto;
+}
+
+.paragraphMobileApp1 {
+  padding-left: 2.5rem;
+  margin: 4rem auto;
+  color: #333;
+}
+
+.smallCaps {
+  font-family: 'Google Sans Text', sans-serif;
+  font-weight: 300;
+  font-size: 0.625rem;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.ico {
+  font-size: 2rem;
+}
+
+.picMobileApp {
+  margin: 3rem auto;
+  width: 100%;
+}
+
+/***** Explore Section *****/
+
+#explore {
+  margin: 3rem 5rem auto auto;
+}
+
+.textExplore {
+  color: #ff0000;
+  letter-spacing: 0.125rem;
+  padding: 2rem auto;
+}
+
+.headingExplore {
+  padding: 4rem auto;
+  color: #02027e;
+  font-family: 'Google Sans Text', 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.ulExplore {
+  margin: auto 2rem;
+}
+
+.ulExplore > ul {
+  margin: 3rem auto;
+}
+
+.ulExplore > ul > li {
+  display: inline-block;
+  margin: auto 1rem;
+}
+
+.ulExplore > ul > li > a {
+  color: #ff0000;
+  font-family: 'Montserrat', 'Open-Sans', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.linkExplore:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.picsExplore {
+  margin: 2rem 2rem;
+  width: 100%;
+  height: auto;
+  border-radius: 0.3125rem;
+  box-shadow: 0.125rem 0.125rem 1.125rem rgba(0, 0, 0.4);
+}
+
+.buttonExplore {
+  padding: 0.625rem 1.875rem;
+  border: 0.0625rem solid #ff0000;
+  color: #ff0000;
+  margin: 3rem 45%;
+}
+
+.buttonExplore:hover {
+  color: #fff;
+  background-color: #ff0000;
+}
+
+/***** Review Section *****/
+
+#review {
+  background-image: url('http://jellydemos.com/html/baume/assets/images/resources/backgrounds/bg1.jpg');
+  /* background-size: cover; */
+  width: 100%;
+  min-height: 50rem;
+  z-index: -1;
+}
+
+.headingReview {
+  color: #02027e;
+  font-weight: 700;
+  margin: 5rem auto auto 5rem;
+  font-size: 3rem;
+}
+
+.textReview {
+  color: #02027e;
+  margin: 1rem auto auto 5rem;
+}
+
+.logoReview {
+  margin: 5rem 5rem auto auto;
+}
+
+.carouselReview {
+  margin-top: 4rem;
+}
+
+.headingCarouselReview {
+  color: #ff0000;
+  margin: 2rem 3rem;
+}
+
+.textCarouselReview {
+  margin: 2rem 3rem;
+  font-size: 2rem;
+}
+
+.h4CarouselReview {
+  text-transform: uppercase;
+  color: #3cb371;
+  font-weight: 600;
+  margin: 4rem 3rem auto 3rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.125rem;
+}
+
+.icon {
+  background-color: #333;
+  border-radius: 50%;
+}
+
+/***** Reservation Section *****/
+
+#reservation {
+  margin: 5rem auto !important;
+}
+
+.textReservation {
+  color: #ff0000;
+  letter-spacing: 0.125rem;
+}
+
+.headingReservation {
+  color: #02027e;
+  font-size: 3rem;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/***** About Us Section *****/
+
+#aboutUs {
+  background-color: #fff5ec;
+  padding: 2rem auto !important;
+}
+
+.leftAboutUs {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  color: #ff0000;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+/***** Bottom Section *****/
+
+#bottom {
+  background-color: #fe043c;
+  color: #fff;
+  height: 8rem;
+  font-size: 1.5rem;
+}
+
+.coloredText {
+  background: linear-gradient(to right, #ffcca2, #b388e2);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
