@@ -130,7 +130,7 @@ article > a {
 
 #picture {
   margin-right: 0;
-  padding-right: 0;
+  padding: 0;
 }
 
 /***** Discover Section *****/
@@ -149,6 +149,11 @@ article > a {
   color: #02027e;
   font-weight: 700;
   font-size: 3rem;
+}
+
+.centeredFixedCard {
+  width: 18rem;
+  margin: 0 auto;
 }
 
 .cardText {
